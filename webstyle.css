@@ -1,0 +1,545 @@
+body {
+    margin: 0 7vw;
+    /* background-color: rgb(31, 149, 245); */
+    /* background-color: rgb(26, 194, 255); */
+    /* background: radial-gradient(circle, rgba(26, 194, 255, 1) 0%, rgba(31, 149, 245, 1) 80%); */
+    background-color: rgb(31, 149, 245);
+    background-image: url(Images/cloudy.jpg);
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+
+}
+
+header {
+    background-color: green;
+    background-image: url(Images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    display: block;
+    margin: 0 -7vw;
+}
+
+header h1,
+h3 h1 {
+    text-transform: uppercase;
+    font-size: 65px;
+    margin-top: 0;
+    padding-top: 25px;
+    margin-bottom: 0;
+    text-shadow: 7px 7px 5px black;
+    text-align: center;
+}
+
+.errPage {
+    margin: auto;
+    width: 55%;
+    margin-top: 6vw;
+    text-align: center;
+}
+
+.errPage h1 {
+    font-size: 100px;
+    margin: 0;
+}
+
+.errPage h1 img {
+    /* position: absolute; */
+    float: left;
+    top: 12vw;
+    left: 23vw;
+    height: 300px;
+    margin-right: -7vw;
+}
+
+#errCode {
+    -webkit-text-fill-color: black;
+}
+
+.errPage h2 {
+    -webkit-text-fill-color: rgb(2, 178, 2);
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+}
+
+.errPage h2 img {
+    height: 3lh;
+    float: right;
+    position: relative;
+    right: 30px;
+}
+
+.errPage p {
+    font-size: 25px;
+}
+
+
+header h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0 0;
+    padding-bottom: 10px;
+    text-shadow: 3px 3px 3px black;
+}
+
+header a.link {
+    border-radius: 100px;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+}
+
+header a.link img {
+    height: 7vw;
+    padding: 15px;
+}
+
+/* 
+header .center {
+    margin-left: -810px;
+} */
+
+.mariotitle,
+dd th,
+dt {
+    color: white;
+    -webkit-text-fill-color: orangered;
+    font-family: PaperMarioTitle, Impact, sans-serif;
+    -webkit-text-stroke: 0.07em white;
+    letter-spacing: 0.2ch;
+}
+
+.mariotitle a {
+    color: white;
+    -webkit-text-fill-color: rgb(190, 67, 190);
+    font-family: PaperMarioTitle, Impact, sans-serif;
+    /* -webkit-text-stroke: 0.07em white; */
+}
+
+.mariotitle a:hover {
+    color: white;
+    -webkit-text-fill-color: rgb(53, 53, 255);
+    font-family: PaperMarioTitle, Impact, sans-serif;
+    /* -webkit-text-stroke: 0.07em white; */
+}
+
+.mariotitle a:active {
+    color: black;
+    -webkit-text-fill-color: gold;
+    font-family: PaperMarioTitle, Impact, sans-serif;
+    -webkit-text-stroke: 0.07em black;
+}
+
+img.jpg {
+    border-radius: 10px;
+    border: 3px white solid;
+}
+
+img.png {
+    filter: drop-shadow(7px 7px 5px black);
+}
+
+img.inline {
+    height: 1.5em;
+}
+
+header img.jpg {
+    border: 7px white solid;
+}
+
+header img.png {
+    filter: drop-shadow(3px 3px 5px black);
+}
+
+@font-face {
+    font-family: PaperMarioTitle;
+    src: url(Fonts/PaperMarioTitle.ttf);
+}
+
+@font-face {
+    font-family: PaperMarioText;
+    src: url(Fonts/PaperMarioText.otf);
+}
+
+nav {
+    background-color: green;
+    background-image: url(Images/grass.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    border: 3px black solid;
+    border-radius: 4px;
+    /* position: sticky; */
+    top: 0;
+    margin: 0;
+    padding: 0;
+    margin-left: -7vw;
+    margin-right: -7vw;
+    padding-bottom: 2vh;
+    text-align: center;
+    padding-top: 2vh;
+    /* width: 100vw */
+    z-index: 1000;
+}
+
+nav ul {
+    overflow: auto;
+    list-style-type: none;
+    display: inline;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    font-family: PaperMario, Impact, sans-serif;
+}
+
+nav li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    margin-right: 0.5vw;
+}
+
+nav a.text {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px black solid;
+    margin: 0px;
+}
+
+nav a.text:hover {
+    color: orange;
+    -webkit-text-fill-color: orange;
+    -webkit-text-stroke: 0.07lh black;
+}
+
+nav img {
+    /* height: 80px; */
+    /* vertical-align: bottom;
+    margin-left: -3vw;
+    margin-right: 2.5vw; */
+    height: 4.5vw;
+    filter: drop-shadow(4px 4px 3px black);
+}
+
+nav a.link,
+nav a.text {
+    display: inline-block;
+    border-radius: 5px;
+}
+
+nav a.link,
+header a.link,
+nav a.text {
+    color: white;
+    background-color: orange;
+    border: 2px black solid;
+}
+
+nav a.link,
+header a.link {
+    padding: 5px 10px;
+}
+
+nav a.link:hover,
+header a.link:hover,
+nav a.text:hover {
+    background-color: orangered;
+    box-shadow: 5px 5px 5px black;
+}
+
+nav a.link:active,
+header a.link:active,
+nav a.text:active {
+    box-shadow: none;
+}
+
+h3 {
+    font-size: 1.6vw;
+    text-align: center;
+    margin-right: 6vw;
+    margin-left: 6vw;
+    font-family: PaperMarioText, Comic Sans MS, Comic Sans, sans-serif;
+    /* line-height: 35px; */
+    color: white;
+
+    /* background-image: url(Images/hills.png); */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), */
+    background-image: url(Images/hills.png);
+
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    padding: 50px 85px;
+    border-radius: 10px;
+    border: 5px white solid;
+    margin-bottom: 50px
+}
+
+p img.imageR {
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-left: 1vw;
+}
+
+p img.imageL {
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-right: 1vw;
+}
+
+/* img::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+} */
+
+td p {
+    font-family: PaperMarioText, Comic Sans MS, Comic Sans, sans-serif;
+    color: white;
+    font-size: 1.1vw;
+    padding: 10px 17px;
+    border: 3px white solid;
+    border-radius: 10px;
+    margin: 0;
+    /* max-width: 75vw; */
+    /* text-align: left; */
+}
+
+td p,
+h3 {
+    background-color: rgb(55, 150, 240);
+}
+
+h3 table {
+    font-family: PaperMarioText, Comic Sans MS, Comic Sans, sans-serif;
+    color: white;
+    font-size: 1.3vw;
+    text-align: left;
+    margin-bottom: 10px;
+    /* border: 10px black solid; */
+    /* text-align: center; */
+    /* margin-left: -7vw; */
+}
+
+h3 tr {
+    line-height: 1.7vw;
+}
+
+h3 td {
+    padding-bottom: 0;
+}
+
+td img.portrait {
+    height: 17vw;
+}
+
+td img.landscape {
+    height: 14vw;
+}
+
+figure img.landscape {
+    height: 15vw;
+}
+
+td.imageL {
+    padding-right: 7vw;
+    text-align: center;
+}
+
+td.imageR {
+    padding-left: 7vw;
+    text-align: center;
+}
+
+table td {
+    padding-bottom: 50px;
+}
+
+#Chapters+dd table td {
+    padding-bottom: 0px;
+}
+
+table.center td {
+    padding-bottom: 0;
+}
+
+table:not(.center) ul li {
+    display: inline;
+}
+
+table ul li figure {
+    display: inline-block;
+    margin: 0 1vw;
+}
+
+table ul {
+    padding-left: 0
+}
+
+td a.link:hover img {
+    box-shadow: 5px 5px 5px black;
+    border: 5px black solid;
+}
+
+dl td:has(img:not(.imageR, .imageL, .inline)) {
+    text-align: center;
+}
+
+p img.boss1 {
+    height: 8vw;
+    /* float: inline-end;
+    position: static;
+    bottom: 10px;
+    right: 10px; */
+}
+
+p img.boss2 {
+    height: 4vw;
+}
+
+dl td>img {
+    margin-right: 1vw;
+}
+
+td a.link:active img {
+    box-shadow: 0px 0px 10px white;
+    border: 5px yellow solid;
+}
+
+footer footer {
+    background-image: url(Images/stage.png);
+    background-repeat: no-repeat;
+    background-size: 120% 100%;
+    background-position-x: center;
+    padding: 20px 5vw;
+    margin: 0 -7vw;
+    height: 15vmax;
+
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 2vmin;
+    /* font-size: 20px; */
+
+}
+
+footer {
+    background-image: url(Images/wood.jpg);
+    background-repeat: repeat-x;
+    background-size: 34vmax, 100%;
+    background-position: bottom;
+    /* padding: 20px 5vw;
+    margin: 0 -7vw;
+    height: 15vmax; */
+
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 2vmin;
+    /* font-size: 20px; */
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p,
+footer a {
+    color: white;
+    font-size: 3vmin;
+    /* font-size: 20px; */
+    padding-bottom: 0;
+    padding: unset 0;
+    margin: 0 0;
+    border-width: 0;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+footer ul {
+    margin-left: 2vw;
+    font-size: 3vmin;
+}
+
+footer a:active {
+    color: black
+}
+
+footer td {
+    padding: 0;
+    padding-right: 3vw;
+    margin: 0;
+    vertical-align: top;
+}
+
+footer td img {
+    height: 4vmax;
+    /* height: 75px; */
+    /* height: calc((7vmin + 5vmax) / 2); */
+    /* width: 4vmin; */
+}
+
+table table td {
+    text-align: center;
+    padding: 0.2vw 0.5vw;
+}
+
+footer td a.link:hover img {
+    border-width: 0.25vmax;
+    border-radius: 5px;
+}
+
+.social:hover img {
+    border-width: 0;
+    box-shadow: 0 0 0 transparent;
+    filter: drop-shadow(0.4vmax 0.4vmax 0.4vmax black)
+}
+
+.social:active img {
+    filter: drop-shadow(0.4vmax 0.4vmax 0.4vmax white)
+}
+
+figcaption {
+    text-align: center;
+    font-family: PaperMarioText, Comic Sans MS, Comic Sans, sans-serif;
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 0.07em black;
+    font-style: italic;
+    /* filter: drop-shadow(0.2em 0.2em 0.2em black) */
+}
+
+figure figcaption {
+    font-size: 1.4vw;
+}
+
+footer figcaption {
+    color: rgb(166, 166, 166);
+}
+
+dt {
+    font-size: 3vw;
+    margin-bottom: 10px;
+}
+
+dd th {
+    -webkit-text-fill-color: black;
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+[id]::before {
+    content: '';
+    display: block;
+    height: 100px;
+    margin-top: -100px;
+    visibility: hidden;
+}
