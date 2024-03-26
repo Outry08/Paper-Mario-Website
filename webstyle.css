@@ -158,6 +158,11 @@ img.inline {
     vertical-align: middle;
 }
 
+img.inlineTop {
+    height: 1.5em;
+    text-align: left;
+}
+
 header img.jpg {
     border: 7px white solid;
 }
@@ -298,6 +303,10 @@ h3 {
     margin-bottom: 50px
 }
 
+figcaption:has(br) {
+    line-height: 1.1em;
+}
+
 p img.imageR {
     float: right;
     margin: 0;
@@ -361,6 +370,10 @@ td img.landscape {
     height: 14vw;
 }
 
+td img.landscape2 {
+    height: 11vw;
+}
+
 figure img.landscape {
     height: 15vw;
 }
@@ -396,8 +409,20 @@ table ul li figure {
     margin: 0 1vw;
 }
 
+table ul li figure:has(.landscape2) {
+    margin: 0 0.5vw;
+}
+
 table ul {
-    padding-left: 0
+    padding-left: 0;
+}
+
+table ul:has(figure) {
+    margin: 20px -7vw;
+}
+
+table li:has(figure) {
+    vertical-align: middle;
 }
 
 td a.link:hover img {
@@ -405,7 +430,7 @@ td a.link:hover img {
     border: 5px black solid;
 }
 
-dl td:has(img:not(.imageR, .imageL, .inline)) {
+dl td:has(img:not(.imageR, .imageL, .inline, .inlineTop)) {
     text-align: center;
 }
 
@@ -419,6 +444,10 @@ p img.boss2 {
 
 p img.boss3 {
     height: 12vw;
+}
+
+p img.boss4 {
+    height: 16vw;
 }
 
 dl td>img {
@@ -468,7 +497,7 @@ footer {
 footer p,
 footer a {
     color: white;
-    font-size: 1.5vmax;
+    font-size: 1.5vw;
     /* font-size: 20px; */
     padding-bottom: 0;
     padding: unset 0;
@@ -480,7 +509,7 @@ footer a {
 
 footer ul {
     margin-left: 2vw;
-    font-size: 1.5vmax;
+    font-size: 1.5vw;
 }
 
 footer ul {
@@ -488,10 +517,14 @@ footer ul {
 }
 
 footer figcaption {
-    font-size: 1vmax;
+    font-size: 1vw;
     margin: 0;
     padding: 0;
+}
 
+footer .jpg {
+    border-width: 0.15vw;
+    border-radius: 5px;
 }
 
 footer a:active {
@@ -520,18 +553,18 @@ table table td {
 }
 
 footer td a.link:hover img {
-    border-width: 0.25vmax;
+    border-width: 0.15vw;
     border-radius: 5px;
 }
 
 .social:hover img {
     border-width: 0;
     box-shadow: 0 0 0 transparent;
-    filter: drop-shadow(0.4vmax 0.4vmax 0.4vmax black)
+    filter: drop-shadow(0.4vw 0.4vw 0.4vw black)
 }
 
 .social:active img {
-    filter: drop-shadow(0.4vmax 0.4vmax 0.4vmax white)
+    filter: drop-shadow(0.4vw 0.4vw 0.4vw white)
 }
 
 figcaption {
