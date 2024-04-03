@@ -80,7 +80,7 @@ h3 .mariotitle {
     height: 3lh;
     float: right;
     position: relative;
-    right: 30px;
+    right: 10px;
 }
 
 .errPage p {
@@ -123,14 +123,14 @@ dt {
     letter-spacing: 0.2ch;
 }
 
-.mariotitle a {
+.mariotitle a:hover {
     color: white;
     -webkit-text-fill-color: rgb(190, 67, 190);
     font-family: PaperMarioTitle, Impact, sans-serif;
     /* -webkit-text-stroke: 0.07em white; */
 }
 
-.mariotitle a:hover {
+.mariotitle a {
     color: white;
     -webkit-text-fill-color: rgb(53, 53, 255);
     font-family: PaperMarioTitle, Impact, sans-serif;
@@ -221,7 +221,7 @@ nav li {
 nav a.text {
     display: inline-block;
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     padding: 10px 15px;
     border-radius: 5px;
     text-align: center;
@@ -300,11 +300,15 @@ h3 {
     padding: 50px 85px;
     border-radius: 10px;
     border: 5px white solid;
-    margin-bottom: 50px
+    margin-bottom: 50px;
 }
 
 figcaption:has(br) {
     line-height: 1.1em;
+}
+
+p {
+    overflow: hidden;
 }
 
 p img.imageR {
@@ -366,7 +370,8 @@ td img.portrait {
     height: 17vw;
 }
 
-td img.landscape {
+td img.landscape,
+td img.portrait2 {
     height: 14vw;
 }
 
@@ -427,7 +432,7 @@ table li:has(figure) {
 
 td a.link:hover img {
     box-shadow: 5px 5px 5px black;
-    border: 5px black solid;
+    border: 3px black solid;
 }
 
 dl td:has(img:not(.imageR, .imageL, .inline, .inlineTop)) {
@@ -456,7 +461,7 @@ dl td>img {
 
 td a.link:active img {
     box-shadow: 0px 0px 10px white;
-    border: 5px yellow solid;
+    border: 3px yellow solid;
 }
 
 /* footer footer {
@@ -572,7 +577,7 @@ figcaption {
     font-family: PaperMarioText, Comic Sans MS, Comic Sans, sans-serif;
     color: black;
     -webkit-text-fill-color: white;
-    -webkit-text-stroke: 0.07em black;
+    -webkit-text-stroke: 0.06em black;
     font-style: italic;
     /* filter: drop-shadow(0.2em 0.2em 0.2em black) */
 }
@@ -597,7 +602,7 @@ dd th {
 [id]::before {
     content: '';
     display: block;
-    height: 12vh;
-    margin-top: -12vh;
+    height: 13vh;
+    margin-top: -13vh;
     visibility: hidden;
 }
