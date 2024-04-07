@@ -370,6 +370,10 @@ td img.portrait {
     height: 17vw;
 }
 
+td img.portrait3 {
+    height: 26vw;
+}
+
 td img.landscape,
 td img.portrait2 {
     height: 14vw;
@@ -487,7 +491,8 @@ footer {
     background-position: bottom;
     padding: 20px 5vw;
     margin: 0 -7vw;
-    height: 10vmax;
+    /* height: 10vmax; */
+    height: fit-content;
 
     font-family: 'Times New Roman', Times, serif;
     color: white;
@@ -512,13 +517,23 @@ footer a {
     background-color: transparent;
 }
 
-footer ul {
-    margin-left: 2vw;
+footer address ul {
+    margin-left: 4vmax;
     font-size: 1.5vw;
 }
 
 footer ul {
-    margin-top: 0;
+    margin: 0;
+}
+
+footer td>ul {
+    text-align: center;
+
+}
+
+footer td>ul li {
+    display: inline;
+    margin: auto 4px;
 }
 
 footer figcaption {
@@ -605,4 +620,9 @@ dd th {
     height: 13vh;
     margin-top: -13vh;
     visibility: hidden;
+}
+
+topic {
+    text-decoration: underline solid;
+    font-style: italic;
 }
